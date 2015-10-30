@@ -1,0 +1,536 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>Result-1</title>
+	<link href="css/result.css" rel="stylesheet" type="text/css" media="all">
+	<link href='css/css.css' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/Calendar.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		function dataTime(y,d){
+			new Calendar().show(document.getElementById('dd'),document.getElementById('control_date'),document.getElementById(y),document.getElementById(d));
+		}
+	</script>
+</head>
+
+<body>
+
+
+
+
+	<div class="container">
+		<div class="divhead">
+			<div class="imgnew">
+				<img src="images/logo-mimoshow-new.png">
+			</div>
+			<div>
+				<img class="imag01" src="images/728-90-01.jpg">
+			</div>
+		</div>
+		<section class="slider-container">
+	<ul id="slider" class="slider-wrapper">
+		<li class="slide-current">
+			<img src="images/1.jpg" alt="Slider Imagen 1">
+			<div class="caption">
+				<h3 class="caption-title">站长素材</h3>
+				<p>图片1</p>
+			</div>
+		</li>
+
+		<li>
+			<img src="images/2.jpg" alt="Slider Imagen 1">
+			<div class="caption">
+				<h3 class="caption-title">站长素材</h3>
+				<p>图片2</p>
+			</div>
+		</li>
+
+		<li>
+			<img src="images/3.jpg" alt="Slider Imagen 1">
+			<div class="caption">
+				<h3 class="caption-title">站长素材</h3>
+				<p>图片3</p>
+			</div>
+		</li>
+
+		<li>
+			<img src="images/banner.png" alt="Slider Imagen 1">
+			<div class="caption">
+				<h3 class="caption-title">站长素材</h3>
+				<p>图片4</p>
+			</div>
+		</li>
+	</ul>
+
+	<ul id="slider-controls" class="slider-controls"></ul>
+
+</section>
+		
+		
+		<div action="" class="formcss">
+			<div class="formcdiv">
+				<div class="forlab">
+					
+					Search Air Availability
+				</div>
+			</div>
+			<table class="fortab">
+				<th>Depart City</th>
+				<th>Arrival City</th>
+				<th>Depart Date</th>
+				<th>Depart Time</th>
+				<th>Cabin Class</th>
+				<th></th>
+				
+			</table>
+		
+			<div class="divtab">
+				<table class="fortabtr">
+					<th><input type="text" class="thinpdep"></th>
+					<th><input type="text" class="thinparr"></th>
+					<th>  
+						<div class="clendar">
+							<select class="calendarday"  >
+								 <option  value="01" >01</option>
+								 <option value="02">02</option>
+								 <option value="03">03</option>
+								 <option value="04">04</option>
+								 <option  selected="selected" name="dd" id="dd" value="05">05</option>
+							</select>
+							<select class="calendarYYMM" name="yyyymm" >
+								 <option  value="Oct2015" selected="selected" id="yyyymm">Oct2015</option>
+								 <option value="Nov2014">Nov2014</option>
+								 <option value="Fed2013">Fed2013</option>
+								 <option value="Ang2011">Ang2011</option>
+								 <option value="Jun2010">Jun2010</option>
+							</select>
+							<img src="images/cal.gif" class="dataimg" id="control_date" onClick="dataTime('yyyymm','dd');">
+								
+						</div>
+					</th>
+					<th>
+						<select id="" name="" title="Select the departure time" class="calendardata">
+						   <option value="00:00">Any time</option>
+			               <option value="08:01">Before 8am</option>
+			               <option value="10:01">Early morning (8-10am)</option>
+			               <option value="12:01">Late morning (10am-12pm)</option>
+			               <option value="15:01">Early afternoon (12-3pm)</option>
+			               <option value="17:01">Late afternoon (3-5pm)</option>
+			               <option value="20:01">Evening (5-8pm)</option>
+			               <option value="23:59">After 8pm</option>
+						</select>
+					</th>
+					<th>
+						<select id="" name="" title="Select the departure time" class="calendardata">
+						   <option value="00:00">Any time</option>
+			               <option value="08:01">Before 8am</option>
+			               <option value="10:01">Early morning (8-10am)</option>
+			               <option value="12:01">Late morning (10am-12pm)</option>
+			               <option value="15:01">Early afternoon (12-3pm)</option>
+			               <option value="17:01">Late afternoon (3-5pm)</option>
+			               <option value="20:01">Evening (5-8pm)</option>
+			               <option value="23:59">After 8pm</option>
+						</select>
+					
+					
+					</th>
+					<th>
+						<input type="button" value="Delete" class="forthdel"></input>
+					
+					</th>
+				</table>
+				<table class="fortabtr">
+					<th><input type="text" class="thinpdep"></th>
+					<th><input type="text" class="thinparr"></th>
+					<th>  
+						<div class="clendar">
+							<select class="calendarday">
+								 <option  value="01" >01</option>
+								 <option value="02">02</option>
+								 <option value="03">03</option>
+								 <option value="04">04</option>
+								 <option  selected="selected" name="dd" id="dd2" value="05">05</option>
+							</select>
+							<select class="calendarYYMM">
+								 <option  value="Oct2015" selected="selected" id="yyyymm2">Oct2015</option>
+								 <option value="Nov2014">Nov2014</option>
+								 <option value="Fed2013">Fed2013</option>
+								 <option value="Ang2011">Ang2011</option>
+								 <option value="Jun2010">Jun2010</option>
+							</select>
+							<img src="images/cal.gif" class="dataimg" id="control_date" onClick="dataTime('yyyymm2','dd2');">
+						</div>
+					</th>
+					<th>
+						<select id="" name="" title="Select the departure time" class="calendardata">
+						   <option value="00:00">Any time</option>
+			               <option value="08:01">Before 8am</option>
+			               <option value="10:01">Early morning (8-10am)</option>
+			               <option value="12:01">Late morning (10am-12pm)</option>
+			               <option value="15:01">Early afternoon (12-3pm)</option>
+			               <option value="17:01">Late afternoon (3-5pm)</option>
+			               <option value="20:01">Evening (5-8pm)</option>
+			               <option value="23:59">After 8pm</option>
+						</select>
+					</th>
+					<th>
+						<select id="" name="" title="Select the departure time" class="calendardata">
+						   <option value="00:00">Any time</option>
+			               <option value="08:01">Before 8am</option>
+			               <option value="10:01">Early morning (8-10am)</option>
+			               <option value="12:01">Late morning (10am-12pm)</option>
+			               <option value="15:01">Early afternoon (12-3pm)</option>
+			               <option value="17:01">Late afternoon (3-5pm)</option>
+			               <option value="20:01">Evening (5-8pm)</option>
+			               <option value="23:59">After 8pm</option>
+						</select>
+					
+					
+					</th>
+					<th>
+						<input type="button" value="Add flight" class="forthadd"></input>
+					
+					</th>
+				</table>
+				
+			</div>
+		</div>
+		
+			<div class="divtab-1">
+				<div class="cendiv">
+					<div class="noftr">
+						<div class="noftrdivspan-lef">
+							<div class="noftrspanright">Number of Travellers</div>
+						</div>
+						<div class="noftrdiv">
+							<table class="cendivtableleft">
+								<th>adult&nbsp;&nbsp;&nbsp;</th>
+								<th>Child(2-11years)</th>
+								<th>infant(<2years)</th>
+							
+							</table>
+							<table>
+									<th>
+										<select id="" name="" title="Select the departure time" class="adultoptleft">
+										   <option value="1">1</option>
+										   <option value="2">2</option>
+										   <option value="3">3</option>
+										   <option value="4">4</option>
+										   <option value="5">4</option>
+										   <option value="6">5</option>
+										   <option value="7">6</option>
+										   <option value="8">7</option>
+										   
+										</select>
+									</th>
+									<th>
+										<select id="" name="" title="Select the departure time" class="adultoptcen">
+										   <option value="1">1</option>
+										   <option value="2">2</option>
+										   <option value="3">3</option>
+										   <option value="4">4</option>
+										   <option value="5">4</option>
+										   <option value="6">5</option>
+										   <option value="7">6</option>
+										   <option value="8">7</option>
+										   
+										</select>
+									</th>
+									<th>
+										<select id="" name="" title="Select the departure time" class="adultoptrig">
+										   <option value="1">1</option>
+										   <option value="2">2</option>
+										   <option value="3">3</option>
+										   <option value="4">4</option>
+										   <option value="5">4</option>
+										   <option value="6">5</option>
+										   <option value="7">6</option>
+										   <option value="8">7</option>
+										</select>
+									</th>
+						   </table>
+						</div>
+					</div>
+					<div class="preir">
+						<div class="noftrdivspan-pre">
+							<div class="noftrspanright">Preferred Airlines</div>
+						</div>
+						<div class="preirdiv">
+							<form>
+								<table class="cendivtableright">
+									<th><input type="text" class="cendivtableinp"></th>
+									<th><input type="text" class="cendivtableinp"></th>
+									<th><input type="text" class="cendivtableinp"></th>
+								</table>
+							</form>
+						
+						</div>
+					</div>
+					<div>
+						<table class="startorsearchbut">
+							<th>
+							<input type="button" value="Start Again" class="startinput"></input>
+							</th>
+							<th>
+							<input type="button" value="Search Flights" class="searchinput" onclick="javascript:document.getElementById('searchresult').style.display='block';"></input>
+							</th>
+						</table>
+					</div>
+				
+				
+				</div>
+			</div>
+		
+				
+				
+	</div>
+
+
+		<!-- <div class="prictesdib">
+			<div class="prispa">
+			<h5>&nbsp;&nbsp;<img src="images/i.png">&nbsp;&nbsp;Prices and seats are subject to airline confirmation and are not reserved until the booking is completed with e-ticket.
+			Prices shown are inclusive of Airfare & Govt taxes only. Agency fees & Credit Card fees will be added to the total price of your book
+			ing on the payment screen.</h5>
+			<span>All individual Qantas sectors are quoted to include a credit card surcharge, however only one Qantas surcharge applies to the total bool:ing regardless of the
+			number of Qantas sectors bool:ed  Once your itinerary is finalised the cost reflects the correct surcharge.</span>
+			</div>
+		</div> -->
+		<div class="searchresult" id="searchresult">
+		
+			<div class="searchdiv">
+				<div class="searchforlab">
+					悉尼(SYD)To Melbourne(MEl)On 26/10/2015
+				</div>
+			</div>
+			<table class="searchfortab">
+				<th class="departurecustom" >Departure</th>
+				<th class="arrstom">Arrival</th>
+				<th class="airlinecustom">Airline</th>
+				<th>Flight#</th>
+				<th class="ftrcustom">Fare Type/Rules</th>
+				<th></th>
+				<th>Airfare&Taxes </th>
+				<th>Select</th>
+				
+			</table>
+			<div class="searchdivtab">
+				<table class="searchfortabtr">
+					<tr class="dizhicustom">
+						<td>
+							<h5>悉尼</h5>
+							<div class="searchspan">06:30</div>
+						</td>
+						<td class="arrstom">
+							<h5>Melbourne(Tullamaine)</h5>
+							<div class="searchspan">08:05</div>
+						</td>
+						<td>
+							<h5>Virgin Australia</h5>
+							<img src="images/Airline.png">
+						</td>
+						<td>
+							VA804
+							<div class="searchspan"></div>
+						</td>
+						<td>
+							经济仓Saver
+							<div class="searchspan"></div>
+						</td>
+						<td>
+							More Fares
+							<div class="searchspan"></div>
+						</td>
+						<td>
+							AUD 129.00
+							<div class="searchspan"></div>
+						</td>
+						<td>
+							<img src="images/CheckedInactive.png" id="CheckedInactive" class="CheckedInactive" onclick="javascript:document.getElementById('CheckedInactive').style.display='none';document.getElementById('CheckedActive').style.display='block';">
+							<img src="images/CheckedActive.png" id="CheckedActive" class="CheckedActive" onclick="javascript:document.getElementById('CheckedActive').style.display='none';document.getElementById('CheckedInactive').style.display='block';">
+							<div class="searchspan"></div>
+						</td>
+					</tr>
+					<tr class="xinicustom">
+						<td>
+							<h5>悉尼</h5>
+							<div class="searchspan">06:30</div>
+						</td>
+						<td class="arrstom">
+							<h5>Melbourne(Tullamaine)</h5>
+							<div class="searchspan">08:05</div>
+						</td>
+						<td>
+							<h5>Virgin Australia</h5>
+							<img src="images/Airline.png">
+						</td>
+						<td>
+							VA804
+							<div class="searchspan"></div>
+						</td>
+						<td>
+							经济仓Saver
+							<div class="searchspan"></div>
+						</td>
+						<td>
+							More Fares
+							<div class="searchspan"></div>
+						</td>
+						<td>
+							AUD 129.00
+							<div class="searchspan"></div>
+						</td>
+						<td>
+							<img src="images/CheckedInactive.png" id="CheckedInactive1" class="CheckedInactive" onclick="javascript:document.getElementById('CheckedInactive1').style.display='none';document.getElementById('CheckedActive1').style.display='block';">
+							<img src="images/CheckedActive.png" id="CheckedActive1" class="CheckedActive" onclick="javascript:document.getElementById('CheckedActive1').style.display='none';document.getElementById('CheckedInactive1').style.display='block';">
+							<div class="searchspan"></div>
+						</td>
+					</tr>
+					<tr class="dizhicustom">
+						<td>
+							<h5>悉尼</h5>
+							<div class="searchspan">06:30</div>
+						</td>
+						<td class="arrstom">
+							<h5>Melbourne(Tullamaine)</h5>
+							<div class="searchspan">08:05</div>
+						</td>
+						<td>
+							<h5>Virgin Australia</h5>
+							<img src="images/Airline.png">
+						</td>
+						<td>
+							VA804
+							<div class="searchspan"></div>
+						</td>
+						<td>
+							经济仓Saver
+							<div class="searchspan"></div>
+						</td>
+						<td>
+							More Fares
+							<div class="searchspan"></div>
+						</td>
+						<td>
+							AUD 129.00
+							<div class="searchspan"></div>
+						</td>
+						<td>
+							<img src="images/CheckedInactive.png" id="CheckedInactive2" class="CheckedInactive" onclick="javascript:document.getElementById('CheckedInactive2').style.display='none';document.getElementById('CheckedActive2').style.display='block';">
+							<img src="images/CheckedActive.png" id="CheckedActive2" class="CheckedActive" onclick="javascript:document.getElementById('CheckedActive2').style.display='none';document.getElementById('CheckedInactive2').style.display='block';">
+							<div class="searchspan"></div>
+						</td>
+					</tr>
+					<tr class="xinicustom">
+						<td>
+							<h5>悉尼</h5>
+							<div class="searchspan">06:30</div>
+						</td>
+						<td class="arrstom">
+							<h5>Melbourne(Tullamaine)</h5>
+							<div class="searchspan">08:05</div>
+						</td>
+						<td>
+							<h5>Virgin Australia</h5>
+							<img src="images/Airline.png">
+						</td>
+						<td>
+							VA804
+							<div class="searchspan"></div>
+						</td>
+						<td>
+							经济仓Saver
+							<div class="searchspan"></div>
+						</td>
+						<td>
+							More Fares
+							<div class="searchspan"></div>
+						</td>
+						<td>
+							AUD 129.00
+							<div class="searchspan"></div>
+						</td>
+						<td>
+							<img src="images/CheckedInactive.png" id="CheckedInactive3" class="CheckedInactive"  onclick="javascript:document.getElementById('CheckedInactive3').style.display='none';document.getElementById('CheckedActive3').style.display='block';">
+							<img src="images/CheckedActive.png" id="CheckedActive3" class="CheckedActive" onclick="javascript:document.getElementById('CheckedActive3').style.display='none';document.getElementById('CheckedInactive3').style.display='block';">
+							<div class="searchspan"></div>
+						</td>
+					</tr>
+					
+					
+				</table>
+				<div class="searchfootdiv">
+					<button class="continueloca">Continue</button>
+				</div>
+				
+			</div>
+		</div>
+	
+			<div class="divfoot">
+			
+				 <div class="divfootleft">
+					<div class="divfooleftimg"><img src="images/mimoshow-footer-new.png"></div>
+					<div class="footdivspan">
+						<span class="footspan">米莫说是一个为年轻人打造的线上生活平台。囊括了各种吃喝玩乐购的资讯。无论你是设计师，艺术家，娱乐人，美装控，萌宠奴，广告狗还是路人甲！都能在米莫说看到你的专题！米莫说－带你装逼带你飞！
+						</span><br/><br/>
+						<span class="footspan">联系我们:<a class="lxwmcustom">info@k-evolution.com.au</a></span>
+					</div>
+				</div>
+				<div class="divfootcenter">
+					<div >
+							
+						<div class="block-title"><span>近期文章</span></div>		
+						<ul >
+							<li >
+								<a href="#">韩国新沙洞LINE CAFÉ，激活你的少女心！</a>
+								<span class="post-date">24/09/2015</span>
+								<div class="cear-beth"></div>
+							</li>
+							<li>
+								<a href="#">10月.10部新书上市｜Kinokuniya</a>
+								<span class="post-date">23/09/2015</span>
+								<div class="cear-beth"></div>
+							</li>
+							<li>
+								<a href="#">“好歌曲”大福利——Demo制作免费讲座|《中国好歌曲》澳大利亚招募站</a>
+								<span class="post-date">23/09/2015</span>
+								<div class="cear-beth"></div>
+							</li>
+							<li>
+								<a href="#">黄记煌4.0升级版＠Chatswood Interchange</a>
+								<span class="post-date">23/09/2015</span>
+								<div class="cear-beth"></div>
+							</li>
+						</ul>
+						
+					</div>
+				
+				</div>
+				<div class="divfootright">
+					<a>
+								<img src="./images/ylszydjgk-v2.jpg">
+					</a>
+					<a href="" >
+						<img src="./images/mimocitycode-v2.jpg">
+					</a>
+				</div> 
+
+			</div>
+
+		<div class="divfoot">
+				<div class="td-pb-padding-side">
+					<a>© Copyright 2015 - MiMOShow by K-EVOLUTION</a>  
+				</div>
+			
+				<div class="td-pb-padding-side sidele"><a>闽ICP备15000918号</a></div>
+				<div class="td-pb-padding-side sidele2"><a >PRIVACY POLICY</a></div>
+				<div class="td-pb-padding-side sidele2"><a>TERMS &amp; CONDITIONS</a></div>
+				<div class="td-pb-padding-side sidele2"><a >SHIPPING &amp; DELIVERY</a></div>
+				
+		</div>
+		
+</body>
+</html>
